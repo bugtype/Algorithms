@@ -2,10 +2,23 @@
 알고리즘 연습 및 Snippet
 
 
+## Array
 
-### Math
+### flatmap
 
-HCF( highest common factor ) 최대공약수
+```py
+a = [1,2] + [3,4]
+print (a)
+
+[1, 2, 3, 4]
+
+```
+
+
+
+## Math
+
+### CF( highest common factor ) 최대공약수
 
 ```py
 
@@ -30,7 +43,7 @@ def main():
 
 ```
 
-LCM (  least common multiple ) 최소 공배수
+### LCM (  least common multiple ) 최소 공배수
 
 ```py
 def find_lcm(num_1, num_2):
@@ -48,6 +61,9 @@ def main():
     num_2 = 76
     print(find_lcm(num_1, num_2))
 ```
+
+
+## CP
 
 ### regex
 
@@ -77,5 +93,8 @@ resolve("+82-010-1234-5678")
 
 #### Ref
 https://github.com/TheAlgorithms/Python
+
 http://pythonstudy.xyz/python/article/401-%EC%A0%95%EA%B7%9C-%ED%91%9C%ED%98%84%EC%8B%9D-Regex
+
+https://github.com/chimpler/python-functional-guide
 

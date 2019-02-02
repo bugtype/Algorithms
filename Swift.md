@@ -3,6 +3,24 @@
 ### Swift algorithms
 
 
+### flatmap
+
+```swift
+var str = "Hello, playground"
+
+let numbers = [[1,2,3],[4],[5,6,7,8,9]]
+let flattened = Array(numbers.joined())
+let flatMapItems = numbers.flatMap { $0 }
+
+print(numbers)
+print(flattened)
+print(flatMapItems)
+
+[[1, 2, 3], [4], [5, 6, 7, 8, 9]]
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+```
 
 ### regex
 
