@@ -49,11 +49,33 @@ def main():
     print(find_lcm(num_1, num_2))
 ```
 
+### regex
 
+```py
+# 010-1234-5678 -> 1
+# 82-010-1234-5678 -> 2
+# +82-010-1234-5678 -> 3
+import re
+def resolve(data):
+    patterns = [ '^[0-9]{3}-[0-9]{4}-[0-9]{4}', '^[0-9]{2}-[0-9]{3}-[0-9]{4}-[0-9]{4}', '^\+[0-9]{2}-[0-9]{3}-[0-9]{4}-[0-9]{4}' ]
+    for i in range(0, len(patterns)):
+        pattern = patterns[i]
+        regex = re.compile(pattern)
+        mc = regex.findall(data)
+        if len(mc) > 0:
+            print (i + 1)
+            return (i + 1)
+            break
 
+resolve("010-1234-5678")
+resolve("82-010-1234-5678")
+resolve("+82-010-1234-5678")
+```
 
 
 
 
 #### Ref
 https://github.com/TheAlgorithms/Python
+http://pythonstudy.xyz/python/article/401-%EC%A0%95%EA%B7%9C-%ED%91%9C%ED%98%84%EC%8B%9D-Regex
+
