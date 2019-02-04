@@ -2,6 +2,23 @@
 알고리즘 연습 및 Snippet
 
 
+## 알고리즘 테스트에서 주의사항 
+
+- 조건식 준거에 대해서 정의하기 
+    - Swift에서는 guard let
+    - Method 단계적으로 정의하기 ( dateToObject, timeToInt, filterData )
+- Error 처리 
+
+
+## 알고리즘 테스트에서 생각해야할 것들 
+
+- 집합 ( set, union.. 등)
+- 스택, 큐
+- DFS, BFS
+- Memorial
+
+
+
 ## Array
 
 ### flatmap
