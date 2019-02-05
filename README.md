@@ -31,7 +31,30 @@ print (a)
 
 ```
 
+### zip
 
+```py
+a = [1,2]
+b = [3,4]
+c = [4,5,6]
+print (zip(a,b))
+print (zip(a,c))
+
+[(1, 3), (2, 4)]
+[(1, 4), (2, 5)]
+```
+
+### zip with index
+
+```py
+source = ['a', 'b', 'c']
+for index, element in enumerate(source):
+    print('%d: %s' % (index, element))
+
+0: a
+1: b
+2: c
+```
 
 ## Math
 
