@@ -6,7 +6,7 @@
 
 - 조건식 준거에 대해서 정의하기 
     - Swift에서는 guard let
-    - Method 단계적으로 정의하기 ( dateToObject, timeToInt, filterData )
+    - Method 단계적으로 정의하기 ( dateToObject, timeToInt, filterData, stringToBit, string2bit )
 - Error 처리 
 
 
@@ -16,7 +16,21 @@
 - 스택, 큐
 - DFS, BFS
 - Memorial
+- 비트연산 and, or, xor, not
 
+
+## String
+
+### replace
+
+```py
+import re
+s = "Example String"
+replaced = re.sub('[ES]', 'a', s)
+print (replaced )
+
+axample atring
+```
 
 
 ## Array
@@ -129,6 +143,11 @@ resolve("+82-010-1234-5678")
 ```
 
 
+### 추천 동영상 
+
+https://www.youtube.com/watch?v=mY1-xSmJEic
+
+https://www.youtube.com/channel/UCW_PO0316aD16L3IcD34wPg/videos
 
 
 #### Ref
