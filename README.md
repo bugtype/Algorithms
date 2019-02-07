@@ -17,6 +17,32 @@
 - DFS, BFS
 - Memorial
 - 비트연산 and, or, xor, not
+- Cache 알고리즘 ( LRU, FIFO, LFU )
+
+
+
+## CS
+
+### LRU
+
+```py
+def calc_cache(cache, string, cache_size):
+    try:
+        if len(cache) > cache_size:
+            if cache.count(string) == 0:
+                cache.pop()
+                cache[0] += 1
+            elif cache.count(string) == 1:
+                cache.remove(string)
+        else:
+            if cache.count(string) == 0:
+                cache[0] += 1
+        cache.insert(1, string)
+    except:
+        cache[0] = len(cities)
+    finally:
+        return cache
+```
 
 
 ## String
@@ -157,3 +183,4 @@ http://pythonstudy.xyz/python/article/401-%EC%A0%95%EA%B7%9C-%ED%91%9C%ED%98%84%
 
 https://github.com/chimpler/python-functional-guide
 
+https://gomguard.tistory.com/114
