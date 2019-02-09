@@ -43,6 +43,17 @@ func solution(_ phone_number:String) -> Int {
 
 ```
 
+### formula / Recurrence relation
+
+```swift
+// An = An-1 + An-2
+func recur(num: Int)->Int{
+    if num <= 1 { return 1 }
+    return recur(num: num-1) + recur(num: num-2)
+}
+print(recur(num: 5))
+```
+
 ### ref
 
 regex - https://stackoverflow.com/questions/27880650/swift-extract-regex-matches
