@@ -96,6 +96,43 @@ for index, element in enumerate(source):
 2: c
 ```
 
+## Dictionary
+
+### Tuple
+
+```py
+source = ['a', 'b', 'c']
+for index, element in enumerate(source):
+    print('%d: %s' % (index, element))
+
+0: a
+1: b
+2: c
+```
+
+### Counter
+
+```py
+# 카운터 숫자 세기
+import collections
+
+def solution(participant, completion):
+    print(collections.Counter(participant))
+    answer = collections.Counter(participant) - collections.Counter(completion)
+    print(collections.Counter(answer))
+    return list(answer.keys())[0]
+
+A = ["a","b","c"]
+B = ["b","c"]
+pr = solution(A,B)
+print(pr)
+
+Counter({'a': 1, 'c': 1, 'b': 1})
+Counter({'a': 1})
+a
+```
+
+
 ## Math
 
 ### CF( highest common factor ) 최대공약수
