@@ -58,10 +58,13 @@ print(d)
 
 ```py
 print str(range(1,10001))
+print(str(list(range(1, 10001))).count('8'))
 print str(range(1,10001)).count('8')
 
 # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,. ...
 # 4000
+# 4000
+
 ```
 
 ### ref
