@@ -67,6 +67,38 @@ print str(range(1,10001)).count('8')
 
 ```
 
+### 경우의 수, 순열 permutations
+
+```py
+import itertools
+mylist = [1,2,3]
+mypermuatation =  itertools.permutations(mylist)
+# mypermuatation =  itertools.permutations(mylist,2)
+# 뒤에 숫자가 factor 갯수 
+
+for i in mypermuatation:
+    print i
+
+```
+
+### 알파벳 출력
+
+```py
+
+alphabet = []
+for letter in range(97,123):
+    alphabet.append(chr(letter)
+
+print(alphabet)
+print([chr(letter) for letter in range(97,123)])
+```
+
+
+
+
+
+
+
 ### ref
 
 코딩도장
