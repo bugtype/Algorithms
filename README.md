@@ -2,7 +2,20 @@
 알고리즘 연습 및 Snippet
 
 
-## 알고리즘 테스트에서 주의사항 
+목차
+=================
+* 주의 및 생각해야 할 것들
+    * [주의사항](#주의사항)
+    * [생각해야할_것_풀이방식](#생각해야할_것_풀이방식)
+
+* [CS](#CS)
+    * [LRU](#LRU)
+* [String](#String)
+* [array](#Array)
+* [Dictionary](#Dictionary)
+* [Math](#Math)
+
+## 주의사항 
 
 - 조건식 준거에 대해서 정의하기 
     - Swift에서는 guard let
@@ -10,7 +23,7 @@
 - Error 처리 
 
 
-## 알고리즘 테스트에서 생각해야할 것들 
+## 생각해야할_것_풀이방식
 
 - 집합 ( set, union.. 등)
 - 스택, 큐
@@ -214,6 +227,103 @@ resolve("010-1234-5678")
 resolve("82-010-1234-5678")
 resolve("+82-010-1234-5678")
 ```
+
+
+### collections
+
+```py
+import collections
+source = ['a', 'b', 'c']
+
+print(collections.Counter(source))
+print(collections.Counter(source).keys())
+
+# Counter({'a': 1, 'c': 1, 'b': 1})
+# ['a', 'c', 'b']
+```
+
+
+### set, list 
+
+```py
+def d_fn(n): return (n + sum([int(x) for x in str(n)]))
+
+S = set(range(5000))
+Z = set([d_fn(n) for n in range(5000)])
+print (sum(S-Z))
+# 1227365
+
+
+set3 = set(range(3, 1000, 3))
+set5 = set(range(5, 1000, 5))
+
+print sum(set3 | set5)
+
+sum(list([x for x in range(1000) if x%3==0 or x%5==0]))
+# set3 | set5 의 의미는 set3와 set5의 합집합입니다.
+```
+
+### count
+
+```py
+count={ x:0 for x in range(0,10) }
+
+for x in range(1,1001):
+    for i in str(x):
+        count[int(i)]+=1
+
+print(count)
+
+from collections import defaultdict
+
+d = defaultdict(int)
+for n in range(1, 1001):
+    for x in str(n):
+        d[x] += 1
+
+print(d)
+```
+
+### 8 count
+
+```py
+print str(range(1,10001))
+print(str(list(range(1, 10001))).count('8'))
+print str(range(1,10001)).count('8')
+
+# [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,. ...
+# 4000
+# 4000
+
+```
+
+### 경우의 수, 순열 permutations
+
+```py
+import itertools
+mylist = [1,2,3]
+mypermuatation =  itertools.permutations(mylist)
+# mypermuatation =  itertools.permutations(mylist,2)
+# 뒤에 숫자가 factor 갯수 
+
+for i in mypermuatation:
+    print i
+
+```
+
+### 알파벳 출력
+
+```py
+
+alphabet = []
+for letter in range(97,123):
+    alphabet.append(chr(letter)
+
+print(alphabet)
+print([chr(letter) for letter in range(97,123)])
+```
+
+
 
 
 ### 추천 동영상 
