@@ -11,8 +11,10 @@
 * [CS](#CS)
     * [LRU](#LRU)
 * [String](#String)
+    * [itertools를 이용한 proudct 연산](#itertools를_이용한_product)
 * [array](#Array)
 * [Dictionary](#Dictionary)
+* [Set](#Set)
 * [Math](#Math)
 
 ## 주의사항 
@@ -69,6 +71,73 @@ replaced = re.sub('[ES]', 'a', s)
 print (replaced )
 
 axample atring
+```
+
+### itertools를_이용한_product
+```py
+import itertools                                             
+iterable1 = 'AB'          
+iterable2 = '10'
+iterable3 = '#@'
+s = itertools.product(iterable1, iterable2, iterable3)
+for x in s:
+    print(x)                                                         
+# ('A', '1', '#')
+# ('A', '1', '@')
+# ('A', '0', '#')
+# ('A', '0', '@')
+# ('B', '1', '#')
+# ('B', '1', '@')
+# ('B', '0', '#')
+# ('B', '0', '@')
+                                                                    
+```
+
+### 좌측, 가운데, 우측 정렬
+
+```py
+s = 'abc'
+n = 7
+
+s.ljust(n) # 좌측 정렬
+s.center(n) # 가운데 정렬
+s.rjust(n) # 우측 정렬
+```
+
+### 알파벳 및 숫자 출력
+
+```py
+import string 
+
+string.ascii_lowercase # 소문자 abcdefghijklmnopqrstuvwxyz
+string.ascii_uppercase # 대문자 ABCDEFGHIJKLMNOPQRSTUVWXYZ
+string.ascii_letters #대소문자 모두 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+string.digits # 숫자 0123456789
+```
+
+### 8 count
+
+```py
+print str(range(1,10001))
+print(str(list(range(1, 10001))).count('8'))
+print str(range(1,10001)).count('8')
+
+# [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,. ...
+# 4000
+# 4000
+
+```
+
+### 알파벳 출력
+
+```py
+
+alphabet = []
+for letter in range(97,123):
+    alphabet.append(chr(letter)
+
+print(alphabet)
+print([chr(letter) for letter in range(97,123)])
 ```
 
 
@@ -146,7 +215,46 @@ a
 ```
 
 
+## Set
+
+### set, list 
+
+```py
+def d_fn(n): return (n + sum([int(x) for x in str(n)]))
+
+S = set(range(5000))
+Z = set([d_fn(n) for n in range(5000)])
+print (sum(S-Z))
+# 1227365
+
+
+set3 = set(range(3, 1000, 3))
+set5 = set(range(5, 1000, 5))
+
+print sum(set3 | set5)
+
+sum(list([x for x in range(1000) if x%3==0 or x%5==0]))
+# set3 | set5 의 의미는 set3와 set5의 합집합입니다.
+```
+
+
 ## Math
+
+
+### 경우의 수, 순열 permutations
+
+```py
+import itertools
+mylist = [1,2,3]
+mypermuatation =  itertools.permutations(mylist)
+# mypermuatation =  itertools.permutations(mylist,2)
+# 뒤에 숫자가 factor 갯수 
+
+for i in mypermuatation:
+    print i
+
+```
+
 
 ### CF( highest common factor ) 최대공약수
 
@@ -203,8 +311,6 @@ def main():
 ```
 
 
-## CP
-
 ### regex
 
 ```py
@@ -243,26 +349,6 @@ print(collections.Counter(source).keys())
 ```
 
 
-### set, list 
-
-```py
-def d_fn(n): return (n + sum([int(x) for x in str(n)]))
-
-S = set(range(5000))
-Z = set([d_fn(n) for n in range(5000)])
-print (sum(S-Z))
-# 1227365
-
-
-set3 = set(range(3, 1000, 3))
-set5 = set(range(5, 1000, 5))
-
-print sum(set3 | set5)
-
-sum(list([x for x in range(1000) if x%3==0 or x%5==0]))
-# set3 | set5 의 의미는 set3와 set5의 합집합입니다.
-```
-
 ### count
 
 ```py
@@ -284,44 +370,9 @@ for n in range(1, 1001):
 print(d)
 ```
 
-### 8 count
 
-```py
-print str(range(1,10001))
-print(str(list(range(1, 10001))).count('8'))
-print str(range(1,10001)).count('8')
 
-# [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,. ...
-# 4000
-# 4000
 
-```
-
-### 경우의 수, 순열 permutations
-
-```py
-import itertools
-mylist = [1,2,3]
-mypermuatation =  itertools.permutations(mylist)
-# mypermuatation =  itertools.permutations(mylist,2)
-# 뒤에 숫자가 factor 갯수 
-
-for i in mypermuatation:
-    print i
-
-```
-
-### 알파벳 출력
-
-```py
-
-alphabet = []
-for letter in range(97,123):
-    alphabet.append(chr(letter)
-
-print(alphabet)
-print([chr(letter) for letter in range(97,123)])
-```
 
 
 
