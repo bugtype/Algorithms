@@ -33,10 +33,39 @@
 - Memorial
 - 비트연산 and, or, xor, not
 - Cache 알고리즘 ( LRU, FIFO, LFU )
+- 정렬이 이미 된 list는 이진트리가 검색이 빠름. logn
 
 
 
 ## CS
+
+### DFS
+
+일반적인 DFS 공식
+
+DFS(list, current_index, 연산자,start_value, target_value)
+
+```py
+# 배열 [1,1,1,1]이 있을때 3을 구하는 방식
+# 또는 3을 구하는 방식 갯수
+# 연산자는 +, -만 가능
+# 가능한 연산 +1, -1
+
+def calc(list, a,b,i,target):
+    global count
+    
+    if i >= len(list)-1:
+        if(target == a+b):
+            count+=1
+        return 1
+    calc(list, a+b, list[i+1], i+1, target)
+    calc(list, a+b, -list[i+1], i+1 ,target)
+
+calc(numbers, 0, numbers[index], index, target)
+calc(numbers, 0, -numbers[index], index, target)
+# calc(배열,더한값,연산자,index,taget)
+
+```
 
 ### LRU
 
