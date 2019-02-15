@@ -9,6 +9,7 @@
     * [생각해야할_것_풀이방식](#생각해야할_것_풀이방식)
 
 * [CS](#CS)
+    * [Hash를_이용한_문제](#Hash를_이용한_문제)
     * [LRU](#LRU)
 * [String](#String)
     * [itertools를 이용한 proudct 연산](#itertools를_이용한_product)
@@ -38,6 +39,23 @@
 
 
 ## CS
+
+### Hash를_이용한_문제
+
+A = [leo, kiki, eden]
+B = [eden, kiki]
+output = leo
+
+```py
+import collections
+def solution(participant, completion):
+    A = collections.Counter(participant)
+    B = collections.Counter(completion)
+    C = list(A-B)
+    print()
+    return C[0]
+```
+
 
 ### DFS
 
