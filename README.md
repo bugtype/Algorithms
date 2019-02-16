@@ -17,6 +17,8 @@
 * [Dictionary](#Dictionary)
 * [Set](#Set)
 * [Math](#Math)
+* [강의 추천](#강의_추천)
+
 
 ## 주의사항 
 
@@ -420,11 +422,12 @@ print(d)
 
 
 
+## 강의_추천 
 
+#### 추천 동영상 
 
-
-
-### 추천 동영상 
+sk 알고리즘
+https://www.youtube.com/results?search_query=sk+%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98
 
 https://www.youtube.com/watch?v=mY1-xSmJEic
 
