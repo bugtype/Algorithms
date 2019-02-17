@@ -12,6 +12,7 @@
     * [Hash를_이용한_문제](#Hash를_이용한_문제)
     * [LRU](#LRU)
 * [String](#String)
+    * [n진수 만들기]
     * [itertools를 이용한 proudct 연산](#itertools를_이용한_product)
 * [array](#Array)
 * [Dictionary](#Dictionary)
@@ -111,6 +112,21 @@ def calc_cache(cache, string, cache_size):
 
 ## String
 
+
+### n진수 만들기
+
+```py
+def convert(n, base):                  
+    T = "0123456789ABCDEF"             
+    q, r = divmod(n, base)             
+    if q == 0:                         
+        return T[r]                    
+    else:                              
+        return convert(q, base) + T[r] 
+                                       
+                                       
+print convert(233, 6)                  
+```
 ### replace
 
 ```py
