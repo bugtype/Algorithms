@@ -12,7 +12,7 @@
     * [Hash를_이용한_문제](#Hash를_이용한_문제)
     * [LRU](#LRU)
 * [String](#String)
-    * [n진수 만들기]
+    * [n진수 만들기](#n진수_만들기)
     * [itertools를 이용한 proudct 연산](#itertools를_이용한_product)
 * [array](#Array)
 * [Dictionary](#Dictionary)
@@ -24,15 +24,21 @@
 ## 주의사항 
 
 - 조건식 준거에 대해서 정의하기 
-    - Swift에서는 guard let
+    - ~~Swift에서는 guard let~~
     - Method 단계적으로 정의하기 ( dateToObject, timeToInt, filterData, stringToBit, string2bit )
 - Error 처리 
+- 경우의수 생각해서 조건식 넣기 
+- L,R,U,D 으로 사각형 체크방법
+    - 모두 다른 단어야 한다. LURD ULPR...
+    - 문자열에서 단어들의 차이가 3이여야 한다. ( 같은 단어가 있는지 체크해도 될 듯)
+    - 1,3번째가 L,R이면 2,4번째는 U,D 이여야 한다
 
 
 ## 생각해야할_것_풀이방식
 
 - 집합 ( set, union.. 등)
-- 스택, 큐
+- 스택, 큐 ( Dummy 넣어서 해결해보기 / 빈값)
+    - [0,0]
 - DFS, BFS
 - Memorial
 - 비트연산 and, or, xor, not
@@ -113,7 +119,7 @@ def calc_cache(cache, string, cache_size):
 ## String
 
 
-### n진수 만들기
+### n진수_만들기
 
 ```py
 def convert(n, base):                  
