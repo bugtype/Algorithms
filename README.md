@@ -15,6 +15,8 @@
     * [n진수 만들기](#n진수_만들기)
     * [itertools를 이용한 proudct 연산](#itertools를_이용한_product)
 * [array](#Array)
+    * [rotation](#2D_array_rotation)
+    * [roation_numpy](#2d_array_rotation_numpy)
 * [Dictionary](#Dictionary)
 * [Set](#Set)
 * [Math](#Math)
@@ -236,6 +238,44 @@ print (zip(a,c))
 [(1, 3), (2, 4)]
 [(1, 4), (2, 5)]
 ```
+
+
+### 2d_array_rotation
+
+```py
+def arrayPrint(array):
+    for x in array:
+        print(x)
+    print("###########")
+
+original = [[1, 2,3],
+            [4, 5,6],
+            [7,8,9]]
+
+arrayPrint(original) # 원본
+arrayPrint(original[::-1]) # 아래로 한칸씩 밀림
+arrayPrint(original[-1::]) # 위로 한칸씩 밀림
+arrayPrint(zip(*original[::-1])) # 오른쪽으로 회전 / 현재 list 객체 아님 주의
+
+# https://stackoverflow.com/questions/8421337/rotating-a-two-dimensional-array-in-python
+
+```
+
+### 2d_array_rotation_numpy
+
+```py
+import numpy as np
+m = np.array([[1,2,3],[4,5,6],[7,8,9]], int)
+rotated = np.rot90(m)
+rotated2 = np.rot90(m,axes=(1,0))
+print(m)
+print(rotated)
+print(rotated2)
+
+# https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.rot90.html
+```
+
+
 
 ### zip with index
 
