@@ -349,6 +349,18 @@ sum(list([x for x in range(1000) if x%3==0 or x%5==0]))
 # set3 | set5 의 의미는 set3와 set5의 합집합입니다.
 ```
 
+### 중복만 제거, 중복된 것만 남기기
+
+```py
+l = [1,2,2,3,3,4,5]
+a = set([x for x in l if l.count(x) > 1])
+b = set([x for x in l if l.count(x) == 1])
+
+print(a)
+print(b)
+#set([2, 3])
+#set([1, 4, 5])
+```
 
 ## Math
 
