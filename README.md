@@ -215,7 +215,20 @@ print([chr(letter) for letter in range(97,123)])
 ```
 
 
+
+
+
 ## Array
+
+### union
+```py
+from itertools import chain
+it = chain([1,2,3],[4,5,6])
+print(list(it))
+
+# [1, 2, 3, 4, 5, 6]
+
+```
 
 ### flatmap
 
