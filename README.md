@@ -282,9 +282,27 @@ import numpy as np
 m = np.array([[1,2,3],[4,5,6],[7,8,9]], int)
 rotated = np.rot90(m)
 rotated2 = np.rot90(m,axes=(1,0))
+rotated3 = np.rot90(m,-1)
 print(m)
 print(rotated)
 print(rotated2)
+print(rotated3)
+
+# [[1 2 3]
+#  [4 5 6]
+#  [7 8 9]]
+
+# [[3 6 9]
+#  [2 5 8]
+#  [1 4 7]]
+
+# [[7 4 1]
+#  [8 5 2]
+#  [9 6 3]]
+
+# [[7 4 1]
+#  [8 5 2]
+#  [9 6 3]]
 
 # https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.rot90.html
 ```
