@@ -22,6 +22,7 @@
 * [Math](#Math)
     * [Radian](#Radian)
 * [강의 추천](#강의_추천)
+* [응용문제](#응용문제)
 
 
 ## 주의사항 
@@ -252,6 +253,8 @@ print (zip(a,c))
 [(1, 3), (2, 4)]
 [(1, 4), (2, 5)]
 ```
+
+
 
 
 ### 2d_array_rotation
@@ -541,7 +544,23 @@ for n in range(1, 1001):
 print(d)
 ```
 
+## 응용문제
 
+### zip문제 arr2개 카카오 비밀지도
+
+```py
+
+def solution(n, arr1, arr2):
+    answer = []
+    for i,j in zip(arr1,arr2):
+        a12 = str(bin(i|j)[2:])
+        a12=a12.rjust(n,'0')
+        a12=a12.replace('1','#')
+        a12=a12.replace('0',' ')
+        answer.append(a12)
+    return answer
+
+```
 
 
 ## 강의_추천 
