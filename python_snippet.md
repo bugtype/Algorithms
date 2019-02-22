@@ -120,3 +120,45 @@ for e in edge:
 print(graph)
 # defaultdict(<class 'list'>, {3: [6, 4, 2, 1], 6: [3], 4: [3, 2], 2: [3, 1, 4, 5], 1: [3, 2], 5: [2]})
 ```
+
+
+### n 진수 변환 코드
+```py
+import string
+def convert(n, base):
+    upper = string.ascii_uppercase
+    digit = string.digits
+    T = digit + upper
+    q, r = divmod(n, base)
+    if q == 0:
+        return T[r]
+    else:
+        return convert(q, base) + T[r]
+print convert(233, 2)
+print convert(233, 8)
+print convert(233, 30)
+# 11101001
+# 351
+# 7N
+
+
+import string
+def convert(n, base):
+    if n==0: return 0
+    
+    upper = string.ascii_uppercase
+    digit = string.digits
+    T = digit + upper
+    q = n
+    output = []
+    
+    while(q!=0):
+        q, r = divmod(q, base)
+        output = [T[r]]+output
+    return "".join(output)
+
+print convert(3, 2) #11
+print convert(15, 16) # F
+print convert(255, 16) # FF
+
+```
