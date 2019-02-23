@@ -28,7 +28,6 @@
 ## 주의사항 
 
 - 조건식 준거에 대해서 정의하기 
-    - ~~Swift에서는 guard let~~
     - Method 단계적으로 정의하기 ( dateToObject, timeToInt, filterData, stringToBit, string2bit )
 - Error 처리 
 - 경우의수 생각해서 조건식 넣기 
@@ -310,20 +309,6 @@ print(rotated3)
 # https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.rot90.html
 ```
 
-
-
-### zip with index
-
-```py
-source = ['a', 'b', 'c']
-for index, element in enumerate(source):
-    print('%d: %s' % (index, element))
-
-0: a
-1: b
-2: c
-```
-
 ## Dictionary
 
 ### Tuple
@@ -421,12 +406,23 @@ print("radians(90) = ",math.radians(90)
 import itertools
 mylist = [1,2,3]
 mypermuatation =  itertools.permutations(mylist)
+myCombinations = itertools.combinations(mylist,3)
 # mypermuatation =  itertools.permutations(mylist,2)
-# 뒤에 숫자가 factor 갯수 
+# 뒤에 숫자가 factor 갯수
 
 for i in mypermuatation:
     print i
-
+print("===================")
+for i in myCombinations:
+    print i
+# (1, 2, 3)
+# (1, 3, 2)
+# (2, 1, 3)
+# (2, 3, 1)
+# (3, 1, 2)
+# (3, 2, 1)
+# ===================
+# (1, 2, 3)
 ```
 
 
