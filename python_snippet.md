@@ -1,15 +1,28 @@
 
-### 경우의수 뽑기
+
+### 경우의 수, 순열 permutations, combinations
 
 ```py
 import itertools
 mylist = [1,2,3]
 mypermuatation =  itertools.permutations(mylist)
+myCombinations = itertools.combinations(mylist,3)
 # mypermuatation =  itertools.permutations(mylist,2)
-# 뒤에 숫자가 factor 갯수 
+# 뒤에 숫자가 factor 갯수
 
 for i in mypermuatation:
     print i
+print("===================")
+for i in myCombinations:
+    print i
+# (1, 2, 3)
+# (1, 3, 2)
+# (2, 1, 3)
+# (2, 3, 1)
+# (3, 1, 2)
+# (3, 2, 1)
+# ===================
+# (1, 2, 3)
 ```
 
 ### 경우의수 갯수 nCr, nPr

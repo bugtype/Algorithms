@@ -16,7 +16,7 @@
     * [itertools를 이용한 proudct 연산](#itertools를_이용한_product)
 * [array](#Array)
     * [rotation](#2D_array_rotation)
-    * [roation_numpy](#2d_array_rotation_numpy)
+    * [rotation_numpy](#2d_array_rotation_numpy)
 * [Dictionary](#Dictionary)
 * [Set](#Set)
 * [Math](#Math)
