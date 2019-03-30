@@ -28,3 +28,14 @@ isPalindrome(89894)
 isPalindrome(99899)
 
 ```
+
+
+sort 
+
+```javascript
+var test = [1,5,3,2,0]
+test.sort() // [0, 1, 2, 3, 5]
+test.sort( (a,b) => a-b ) // [0, 1, 2, 3, 5]
+test.sort( (a,b) => b-a) // [5, 3, 2, 1, 0]
+
+```
