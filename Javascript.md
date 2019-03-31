@@ -39,3 +39,12 @@ test.sort( (a,b) => a-b ) // [0, 1, 2, 3, 5]
 test.sort( (a,b) => b-a) // [5, 3, 2, 1, 0]
 
 ```
+
+
+// set
+```javascript
+const arr = [1,3,2,4,3,1,5,6,2,1];
+const newArr = [...new Set(arr)];
+console.log(arr); // [1,3,2,4,5,6] 중복이 제거된 배열을 얻을 수 있다. Set type입니다.
+console.log(convertArr); // [1,3,2,4,5,6] 중복이 제거된 배열을 얻을 수 있다.
+```
