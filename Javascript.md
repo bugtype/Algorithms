@@ -48,3 +48,10 @@ const newArr = [...new Set(arr)];
 console.log(arr); // [1,3,2,4,5,6] 중복이 제거된 배열을 얻을 수 있다. Set type입니다.
 console.log(convertArr); // [1,3,2,4,5,6] 중복이 제거된 배열을 얻을 수 있다.
 ```
+
+// n 진수
+```javascript
+var dec = 123; 
+var hex = dec.toString(16);
+var oct = dec.toString(8);
+```
