@@ -86,3 +86,14 @@ arr.map(x => [x,x*2])
 arr.flatMap( v => [v, v* 2] )
 //  [1, 2, 2, 4, 3, 6, 4, 8, 5, 10]
 ```
+
+
+// Array ?
+
+``` javscript
+var arr = [];
+arr.length = 99
+cosnole.log(arr)
+arr['name'] = 'hello'
+console.log(arr.length)  //??
+```
