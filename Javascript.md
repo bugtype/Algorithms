@@ -90,7 +90,7 @@ arr.flatMap( v => [v, v* 2] )
 
 // Array ?
 
-``` javscript
+``` javascript
 var arr = [];
 arr.length = 99
 cosnole.log(arr)
