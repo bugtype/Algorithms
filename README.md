@@ -79,8 +79,13 @@ def solution(participant, completion):
     return C[0]
 ```
 
+### BFS - Queue 
 
-### DFS
+- list로 하면 o(n)이니 queue 라이브러리 쓸 것
+- from queue import Queue
+- 방문여부는 list가 아닌 dictionary 써서 O(1)으로 만들 것
+
+### DFS - Stack
 
 일반적인 DFS 공식
 
