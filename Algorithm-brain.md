@@ -30,6 +30,24 @@
 
 - pre count (pre sums) 활용
 
+### 2개 더해서 타겟 구하기
+
+- hash를 이용하면 N으로 처리 가능하다.
+- 음의 정수도 포함되는지 확인하자.
+
+```python
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        
+        h = {}
+        for i, num in enumerate(nums):
+            n = target - num
+            if n not in h:
+                h[num] = i
+            else:
+                return [h[n], i]
+```
+
+
 ### 삼각형 만들기
 
 - 정렬해서 풀어야 하는지 생각해보기
