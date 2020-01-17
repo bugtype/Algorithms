@@ -389,7 +389,7 @@ sum(list([x for x in range(1000) if x%3==0 or x%5==0]))
 # set3 | set5 의 의미는 set3와 set5의 합집합입니다.
 ```
 
-### 중복만 제거, 중복된 것만 남기기
+### 중복만 제거, 중복된 것만 남기기 ( 순서 X)
 
 ```py
 l = [1,2,2,3,3,4,5]
@@ -401,6 +401,17 @@ print(b)
 #set([2, 3])
 #set([1, 4, 5])
 ```
+
+### 중복 제거, 순서 보장
+
+```py
+from collections import OrderedDict
+
+originalList = [1, 2, 3, 1, 2, 5, 6, 7, 8]
+list(OrderedDict.fromkeys(originalList))
+```
+
+
 
 ## Math
 
