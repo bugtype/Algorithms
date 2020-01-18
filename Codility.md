@@ -13,3 +13,12 @@ def solution(N):
             count+=1
     return maxCount
 ```
+
+
+### FrogJmp
+
+```py
+def solution(X, Y, D):
+    m,k = divmod((Y-X),D)
+    return m if k == 0 else m+1
+```
