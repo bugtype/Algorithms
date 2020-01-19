@@ -175,3 +175,32 @@ print convert(15, 16) # F
 print convert(255, 16) # FF
 
 ```
+
+### 회전
+
+```py
+def rot90(l):
+  return list(zip(*l[::-1]))
+def rotMinus90(l):
+  return list(zip(*[x[::-1] for x in l]))
+
+def arrayPrint(l):
+  for r in l:
+    print(r)
+  print("===========")
+
+a = [[1,2],[3,4]]  
+b = [[1,2,3],[4,5,6],[7,8,9]]
+
+rotated = rot90(a)
+rotated2 = rotMinus90(a)
+rotated3 = rot90(b)
+rotated4 = rotMinus90(b)
+
+
+arrayPrint(rotated)
+arrayPrint(rotated2)
+arrayPrint(rotated3)
+arrayPrint(rotated4)
+
+```py
