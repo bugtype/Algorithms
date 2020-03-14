@@ -1,6 +1,479 @@
 ﻿# Algorithms
 알고리즘 연습 및 Snippet
 
+ :heavy_check_mark: |  :white_check_mark:
+
+
+## List of Implementations
+
+
+### arrays | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+delete_nth | :heavy_check_mark:
+flatten | :heavy_check_mark:
+garage | :heavy_check_mark:
+josephus_problem | :heavy_check_mark:
+limit | :heavy_check_mark:
+longest_non_repeat | :heavy_check_mark:
+max_ones_index | :heavy_check_mark:
+merge_intervals | :heavy_check_mark:
+missing_ranges | :heavy_check_mark:
+plus_one | :heavy_check_mark:
+rotate | :heavy_check_mark:
+summarize_ranges | :heavy_check_mark:
+three_sum | :heavy_check_mark:
+trimmean | :heavy_check_mark:
+top_1 | :heavy_check_mark:
+two_sum | :heavy_check_mark:
+move_zeros | :heavy_check_mark:
+n_sum | :heavy_check_mark:
+
+### automata | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+DFA | :heavy_check_mark:
+
+### backtrack | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+general_solution.md | :heavy_check_mark:
+add_operators | :heavy_check_mark:
+anagram | :heavy_check_mark:
+array_sum_combinations | :heavy_check_mark:
+combination_sum | :heavy_check_mark:
+factor_combinations | :heavy_check_mark:
+generate_abbreviations | :heavy_check_mark:
+generate_parenthesis | :heavy_check_mark:
+letter_combination | :heavy_check_mark:
+palindrome_partitioning | :heavy_check_mark:
+pattern_match | :heavy_check_mark:
+permute | :heavy_check_mark:
+permute_unique | :heavy_check_mark:
+subsets | :heavy_check_mark:
+subsets_unique | :heavy_check_mark:
+
+### bfs | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+maze_search | :heavy_check_mark:
+shortest_distance_from_all_buildings | :heavy_check_mark:
+word_ladder | :heavy_check_mark:
+
+### bit | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+add_bitwise_operator | :heavy_check_mark:
+bit_operation | :heavy_check_mark:
+bytes_int_conversion | :heavy_check_mark:
+count_flips_to_convert | :heavy_check_mark:
+count_ones | :heavy_check_mark:
+find_difference | :heavy_check_mark:
+find_missing_number | :heavy_check_mark:
+flip_bit_longest_sequence | :heavy_check_mark:
+power_of_two | :heavy_check_mark:
+reverse_bits | :heavy_check_mark:
+single_number | :heavy_check_mark:
+single_number2 | :heavy_check_mark:
+single_number3 | :heavy_check_mark:
+subsets | :heavy_check_mark:
+swap_pair | :heavy_check_mark:
+has_alternative_bit | :heavy_check_mark:
+insert_bit | :heavy_check_mark:
+remove_bit | :heavy_check_mark:
+binary_gap | :heavy_check_mark:
+
+### compression | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+huffman_coding | :heavy_check_mark:
+rle_compression | :heavy_check_mark:
+elias | :heavy_check_mark:
+
+### dfs | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+all_factors | :heavy_check_mark:
+count_islands | :heavy_check_mark:
+pacific_atlantic | :heavy_check_mark:
+sudoku_solver | :heavy_check_mark:
+walls_and_gates | :heavy_check_mark:
+
+### distribution | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+histogram | :heavy_check_mark:
+
+### dp | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+buy_sell_stock | :heavy_check_mark:
+climbing_stairs | :heavy_check_mark:
+coin_change | :heavy_check_mark:
+combination_sum | :heavy_check_mark:
+egg_drop | :heavy_check_mark:
+house_robber | :heavy_check_mark:
+int_divide | :heavy_check_mark:
+job_scheduling | :heavy_check_mark:
+knapsack | :heavy_check_mark:
+longest_increasing | :heavy_check_mark:
+matrix_chain_order | :heavy_check_mark:
+max_product_subarray | :heavy_check_mark:
+max_subarray | :heavy_check_mark:
+min_cost_path | :heavy_check_mark:
+num_decodings | :heavy_check_mark:
+regex_matching | :heavy_check_mark:
+rod_cut | :heavy_check_mark:
+word_break | :heavy_check_mark:
+fibonacci | :heavy_check_mark:
+
+### hosoya triangle | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+
+### graph | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+check_bipartite | :heavy_check_mark:
+strongly_connected | :heavy_check_mark:
+clone_graph | :heavy_check_mark:
+cycle_detection | :heavy_check_mark:
+find_all_cliques | :heavy_check_mark:
+find_path | :heavy_check_mark:
+graph | :heavy_check_mark:
+dijkstra | :heavy_check_mark:
+markov_chain | :heavy_check_mark:
+minimum_spanning_tree | :heavy_check_mark:
+satisfiability | :heavy_check_mark:
+tarjan | :heavy_check_mark:
+traversal | :heavy_check_mark:
+
+### maximum_flow | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+maximum_flow_bfs | :heavy_check_mark:
+maximum_flow_dfs | :heavy_check_mark:
+all_pairs_shortest_path | :heavy_check_mark:
+bellman_ford | :heavy_check_mark:
+Count Connected Components | :heavy_check_mark:
+
+### heap | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+merge_sorted_k_lists | :heavy_check_mark:
+skyline | :heavy_check_mark:
+sliding_window_max | :heavy_check_mark:
+binary_heap | :heavy_check_mark:
+k_closest_points | :heavy_check_mark:
+
+### linkedlist | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+add_two_numbers | :heavy_check_mark:
+copy_random_pointer | :heavy_check_mark:
+delete_node | :heavy_check_mark:
+first_cyclic_node | :heavy_check_mark:
+is_cyclic | :heavy_check_mark:
+is_palindrome | :heavy_check_mark:
+kth_to_last | :heavy_check_mark:
+linkedlist | :heavy_check_mark:
+remove_duplicates | :heavy_check_mark:
+reverse | :heavy_check_mark:
+rotate_list | :heavy_check_mark:
+swap_in_pairs | :heavy_check_mark:
+is_sorted | :heavy_check_mark:
+remove_range | :heavy_check_mark:
+
+### map | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+hashtable | :heavy_check_mark:
+separate_chaining_hashtable | :heavy_check_mark:
+longest_common_subsequence | :heavy_check_mark:
+randomized_set | :heavy_check_mark:
+valid_sudoku | :heavy_check_mark:
+word_pattern | :heavy_check_mark:
+is_isomorphic | :heavy_check_mark:
+is_anagram | :heavy_check_mark:
+
+### maths | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+base_conversion | :heavy_check_mark:
+combination | :heavy_check_mark:
+cosine_similarity | :heavy_check_mark:
+decimal_to_binary_ip | :heavy_check_mark:
+euler_totient | :heavy_check_mark:
+extended_gcd | :heavy_check_mark:
+factorial | :heavy_check_mark:
+gcd/lcm | :heavy_check_mark:
+generate_strobogrammtic | :heavy_check_mark:
+is_strobogrammatic | :heavy_check_mark:
+modular_exponential | :heavy_check_mark:
+next_bigger | :heavy_check_mark:
+next_perfect_square | :heavy_check_mark:
+nth_digit | :heavy_check_mark:
+prime_check | :heavy_check_mark:
+primes_sieve_of_eratosthenes | :heavy_check_mark:
+pythagoras | :heavy_check_mark:
+rabin_miller | :heavy_check_mark:
+rsa | :heavy_check_mark:
+sqrt_precision_factor | :heavy_check_mark:
+summing_digits | :heavy_check_mark:
+hailstone | :heavy_check_mark:
+recursive_binomial_coefficient | :heavy_check_mark:
+find_order | :heavy_check_mark:
+
+### find_primitive_root | :heavy_check_mark:
+
+ 문제 | 풀이여부
+:------------ | :-------------|
+
+### diffie_hellman_key_exchange | :heavy_check_mark:
+
+ 문제 | 풀이여부
+:------------ | :-------------|
+
+### matrix | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+sudoku_validator | :heavy_check_mark:
+bomb_enemy | :heavy_check_mark:
+copy_transform | :heavy_check_mark:
+count_paths | :heavy_check_mark:
+matrix_rotation.txt | :heavy_check_mark:
+matrix_inversion | :heavy_check_mark:
+matrix_multiplication | :heavy_check_mark:
+rotate_image | :heavy_check_mark:
+search_in_sorted_matrix | :heavy_check_mark:
+sparse_dot_vector | :heavy_check_mark:
+sparse_mul | :heavy_check_mark:
+spiral_traversal | :heavy_check_mark:
+
+### crout_matrix_decomposition | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+
+### cholesky_matrix_decomposition | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+sum_sub_squares | :heavy_check_mark:
+
+### queues | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+max_sliding_window | :heavy_check_mark:
+moving_average | :heavy_check_mark:
+queue | :heavy_check_mark:
+reconstruct_queue | :heavy_check_mark:
+zigzagiterator | :heavy_check_mark:
+
+### search | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+binary_search | :heavy_check_mark:
+first_occurrence | :heavy_check_mark:
+last_occurrence | :heavy_check_mark:
+linear_search | :heavy_check_mark:
+search_insert | :heavy_check_mark:
+two_sum | :heavy_check_mark:
+search_range | :heavy_check_mark:
+find_min_rotate | :heavy_check_mark:
+search_rotate | :heavy_check_mark:
+jump_search | :heavy_check_mark:
+next_greatest_letter | :heavy_check_mark:
+
+### set | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+randomized_set | :heavy_check_mark:
+set_covering | :heavy_check_mark:
+find_keyboard_row | :heavy_check_mark:
+
+### sort | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+bitonic_sort | :heavy_check_mark:
+bogo_sort | :heavy_check_mark:
+bubble_sort | :heavy_check_mark:
+bucket_sort | :heavy_check_mark:
+cocktail_shaker_sort | :heavy_check_mark:
+comb_sort | :heavy_check_mark:
+counting_sort | :heavy_check_mark:
+cycle_sort | :heavy_check_mark:
+gnome_sort | :heavy_check_mark:
+heap_sort | :heavy_check_mark:
+insertion_sort | :heavy_check_mark:
+meeting_rooms | :heavy_check_mark:
+merge_sort | :heavy_check_mark:
+pancake_sort | :heavy_check_mark:
+quick_sort | :heavy_check_mark:
+radix_sort | :heavy_check_mark:
+selection_sort | :heavy_check_mark:
+shell_sort | :heavy_check_mark:
+sort_colors | :heavy_check_mark:
+top_sort | :heavy_check_mark:
+wiggle_sort | :heavy_check_mark:
+
+### stack | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+longest_abs_path | :heavy_check_mark:
+simplify_path | :heavy_check_mark:
+stack | :heavy_check_mark:
+valid_parenthesis | :heavy_check_mark:
+stutter | :heavy_check_mark:
+switch_pairs | :heavy_check_mark:
+is_consecutive | :heavy_check_mark:
+remove_min | :heavy_check_mark:
+is_sorted | :heavy_check_mark:
+
+### strings | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+fizzbuzz | :heavy_check_mark:
+delete_reoccurring | :heavy_check_mark:
+strip_url_params | :heavy_check_mark:
+validate_coordinates | :heavy_check_mark:
+domain_extractor | :heavy_check_mark:
+merge_string_checker | :heavy_check_mark:
+add_binary | :heavy_check_mark:
+breaking_bad | :heavy_check_mark:
+decode_string | :heavy_check_mark:
+encode_decode | :heavy_check_mark:
+group_anagrams | :heavy_check_mark:
+int_to_roman | :heavy_check_mark:
+is_palindrome | :heavy_check_mark:
+license_number | :heavy_check_mark:
+make_sentence | :heavy_check_mark:
+multiply_strings | :heavy_check_mark:
+one_edit_distance | :heavy_check_mark:
+rabin_karp | :heavy_check_mark:
+reverse_string | :heavy_check_mark:
+reverse_vowel | :heavy_check_mark:
+reverse_words | :heavy_check_mark:
+roman_to_int | :heavy_check_mark:
+word_squares | :heavy_check_mark:
+unique_morse | :heavy_check_mark:
+judge_circle | :heavy_check_mark:
+strong_password | :heavy_check_mark:
+caesar_cipher | :heavy_check_mark:
+contain_string | :heavy_check_mark:
+count_binary_substring | :heavy_check_mark:
+repeat_string | :heavy_check_mark:
+min_distance | :heavy_check_mark:
+longest_common_prefix | :heavy_check_mark:
+rotate | :heavy_check_mark:
+first_unique_char | :heavy_check_mark:
+repeat_substring | :heavy_check_mark:
+
+### atbash_cipher | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+
+### knuth_morris_pratt | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+
+### tree | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+bst | :heavy_check_mark:
+array_to_bst | :heavy_check_mark:
+bst_closest_value | :heavy_check_mark:
+BSTIterator | :heavy_check_mark:
+delete_node | :heavy_check_mark:
+is_bst | :heavy_check_mark:
+kth_smallest | :heavy_check_mark:
+lowest_common_ancestor | :heavy_check_mark:
+predecessor | :heavy_check_mark:
+serialize_deserialize | :heavy_check_mark:
+successor | :heavy_check_mark:
+unique_bst | :heavy_check_mark:
+depth_sum | :heavy_check_mark:
+count_left_node | :heavy_check_mark:
+num_empty | :heavy_check_mark:
+height | :heavy_check_mark:
+red_black_tree | :heavy_check_mark:
+red_black_tree | :heavy_check_mark:
+segment_tree | :heavy_check_mark:
+segment_tree | :heavy_check_mark:
+iterative_segment_tree | :heavy_check_mark:
+traversal | :heavy_check_mark:
+inorder | :heavy_check_mark:
+level_order | :heavy_check_mark:
+postorder | :heavy_check_mark:
+preorder | :heavy_check_mark:
+zigzag | :heavy_check_mark:
+trie | :heavy_check_mark:
+add_and_search | :heavy_check_mark:
+trie | :heavy_check_mark:
+b_tree | :heavy_check_mark:
+binary_tree_paths | :heavy_check_mark:
+bin_tree_to_list | :heavy_check_mark:
+deepest_left | :heavy_check_mark:
+invert_tree | :heavy_check_mark:
+is_balanced | :heavy_check_mark:
+is_subtree | :heavy_check_mark:
+is_symmetric | :heavy_check_mark:
+longest_consecutive | :heavy_check_mark:
+lowest_common_ancestor | :heavy_check_mark:
+max_height | :heavy_check_mark:
+max_path_sum | :heavy_check_mark:
+min_height | :heavy_check_mark:
+path_sum | :heavy_check_mark:
+path_sum2 | :heavy_check_mark:
+pretty_print | :heavy_check_mark:
+same_tree | :heavy_check_mark:
+tree | :heavy_check_mark:
+
+### unix | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+path | :heavy_check_mark:
+join_with_slash | :heavy_check_mark:
+full_path | :heavy_check_mark:
+split | :heavy_check_mark:
+simplify_path | :heavy_check_mark:
+
+### unionfind | :heavy_check_mark:
+
+문제 | 풀이여부
+:------------ | :-------------|
+count_islands | :heavy_check_mark:
+
+
+---
+---
 
 목차
 =================
