@@ -31,7 +31,7 @@ printInorder(root)
 
 https://leetcode.com/problems/binary-tree-level-order-traversal-ii/discuss/34978/Python-solutions-(dfs-recursively-dfs+stack-bfs+queue).
 
-```
+```py
 # dfs recursively
 def levelOrderBottom1(self, root):
     res = []
