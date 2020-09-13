@@ -16,7 +16,7 @@
    - https://www.crocus.co.kr/625
 
 
-```
+```py
 import sys
 import heapq
 
@@ -53,7 +53,7 @@ for _ in range(numbers):
   - https://programmers.co.kr/learn/courses/30/lessons/42628?language=python3
   - max heap과 min heap 이용.
  
- ```
+ ```py
 from heapq import heappush, heappop
 
 def solution(arguments):
