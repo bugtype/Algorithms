@@ -1,0 +1,26 @@
+
+
+
+### 숫작 주어지면 target 넘버 찾는 경우의 수, stack, dfs
+
+```py
+import collections
+def solution(numbers, target):
+    answer = 0
+    # [count, targetNumber] 
+    # count는 = length까지만 검사
+    queue = collections.deque([(0, 0)])
+    length = len(numbers)
+
+    while queue:
+        n = queue.pop()
+        if n[0] < length:
+            queue.append((n[0] + 1, n[1] + numbers[n[0] - 1]))
+            queue.append((n[0] + 1, n[1] - numbers[n[0] - 1]))
+        elif n[1] == target:
+            answer += 1
+    print(answer)
+    return answer
+
+solution([1,1,1,1,1], 3)
+```
