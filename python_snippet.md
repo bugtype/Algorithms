@@ -202,5 +202,75 @@ arrayPrint(rotated)
 arrayPrint(rotated2)
 arrayPrint(rotated3)
 arrayPrint(rotated4)
+```
+
+
+### Factorial 팩토리얼
 
 ```py
+# 1 1 2 3 5 8
+def fibo(n):
+    dp = [0,1]
+    for _ in range(1,n):
+        dp[0], dp[1] = dp[1], dp[0]+dp[1]
+    return dp[1]
+    
+for i in range(1,10):
+    d = fibo(i)
+    print(d)
+    
+    
+def fib():
+    a, b = 1, 1
+    while True:
+        yield a
+        a, b = b, a + b
+    return b
+        
+for index, x in enumerate(fib()):
+    if index == 10:
+        break
+    print("%s" % x),
+```
+
+### Score of Parentheses
+
+
+```py
+
+def scoreOfParentheses(self, S):
+        stack, cur = [], 0
+        for i in S:
+            if i == '(':
+                stack.append(cur)
+                cur = 0
+            else:
+                cur += stack.pop() + max(cur, 1)
+        return cur
+        
+```
+
+### n으로 표현
+
+https://programmers.co.kr/learn/courses/30/lessons/42895?language=python3
+
+```
+S = [{N}]
+    for i in range(2, 9):
+        lst = [int(str(N)*i)]
+        for X_i in range(0, int(i / 2)):
+            for x in S[X_i]:
+                for y in S[i - X_i - 2]:
+                    lst.append(x + y)
+                    lst.append(x - y)
+                    lst.append(y - x)
+                    lst.append(x * y)
+                    if x != 0: lst.append(y // x)
+                    if y != 0: lst.append(x // y)
+        if number in set(lst):
+            return i
+        S.append(lst)
+    return -1
+```
+
+
