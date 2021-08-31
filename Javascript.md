@@ -2,24 +2,48 @@
 알고리즘 연습 및 Snippet
 
 
-```javascript
-function isPalindrome(number){
-    s = String(number)
-    len = s.length
 
-    if (len % 2 ==0){
-        console.log(number, false)
-        return
+
+### isPalindrome
+
+```javascript
+
+
+function isPalindrome(number){
+   
+    if(number < 0){
+        return false;
     }
-    for(let i = 0; i < Math.floor(len/2); i++){
-        if (s[i]!=s[len-i-1]){
-            console.log(number, false)
-            return
-        }
+    
+    if(number < 10){
+        return true;
     }
-    console.log(number, true)
+   
+    
+    const s = number.toString();
+
+    for(let i = 0; i<Math.floor(s.length/2);i++){
+        if(s[i] !== s[s.length-i-1]){
+            return false;
+        }    
+    }
+    return true;
 
 }
+
+var isPalindrome = function(x) {
+    let current = x;
+    let result = 0;
+
+    while (current > 0) {
+        result = result * 10 + current % 10;
+        current = Math.floor(current / 10);
+    }
+
+    return result === x;
+};
+
+
 isPalindrome(100)
 isPalindrome(-100)
 isPalindrome(1001)
@@ -29,71 +53,226 @@ isPalindrome(99899)
 
 ```
 
-
-sort 
+### twoSum
 
 ```javascript
-var test = [1,5,3,2,0]
-test.sort() // [0, 1, 2, 3, 5]
-test.sort( (a,b) => a-b ) // [0, 1, 2, 3, 5]
-test.sort( (a,b) => b-a) // [5, 3, 2, 1, 0]
+
+var twoSum = function(nums, target) {
+    const map = new Map();
+    for (let i = 0; i < nums.length; i++) {
+        const num = nums[i];
+        const diff = target - num;
+        if (map.has(diff)) return [map.get(diff), i];
+        map.set(num, i);
+    }
+};
+
+```
+
+### reverse Integer
+
+```javascript
+
+var reverse = function(x) {
+    let pos = false;
+    const upperB=Math.pow(2,31)-1;
+    const lowerB=-Math.pow(2,31);
+    if(x<0){
+        pos=true;
+        x*=-1;
+    }
+    const n = Number((""+x).split("").reverse("").join(""));
+    return pos ? -1*n : n;
+};
 
 ```
 
 
-// set
-```javascript
-const arr = [1,3,2,4,3,1,5,6,2,1];
-const newArr = [...new Set(arr)];
-console.log(arr); // [1,3,2,4,5,6] 중복이 제거된 배열을 얻을 수 있다. Set type입니다.
-console.log(convertArr); // [1,3,2,4,5,6] 중복이 제거된 배열을 얻을 수 있다.
-```
+### roman to integer
 
-// n 진수
-```javascript
-var dec = 123; 
-var hex = dec.toString(16);
-var oct = dec.toString(8);
-```
-
-// es 10 array flat
+- https://leetcode.com/problems/roman-to-integer/
 
 ```javascript
-var arr1 = [1, 2, [3, 4]];
-arr1.flat(); 
-// [1, 2, 3, 4]
+var romanToInt = function(s) {
+    
+	let sumArr = []
+	let total = 0
 
-var arr2 = [1, 2, [3, 4, [5, 6]]];
-arr2.flat();
-// [1, 2, 3, 4, [5, 6]]
+	for (let i = 0; i < s.length; i++) {
 
-var arr3 = [1, 2, [3, 4, [5, 6]]];
-arr3.flat(2);
-// [1, 2, 3, 4, 5, 6]
-arr3.flat().flat()
-// [1, 2, 3, 4, 5, 6]
+		switch (s[i]) {
+
+			case "I":
+				sumArr.push(1)
+				break
+			case "V":
+				sumArr.push(5)
+				break
+			case "X":
+				sumArr.push(10)
+				break
+			case "L":
+				sumArr.push(50)
+				break
+			case "C":
+				sumArr.push(100)
+				break
+			case "D":
+				sumArr.push(500)
+				break
+			case "M":
+				sumArr.push(1000)
+				break
+
+		}
+
+	}
+
+	sumArr.forEach((v,i) => {
+
+		if (i == 0) {
+			total += v
+			return
+		}
+
+		if (sumArr[i-1] < v) {
+			total += v-sumArr[i-1]*2
+			return
+		}
+
+		total += v
+
+	})
+
+	return total
+};
 ```
 
 
-// Array.flatMap()
+14. Longest Common Prefix
+
+- https://leetcode.com/problems/longest-common-prefix/ 
+
 
 ```javascript
-var arr = [1,2,3,4,5]
 
-arr.map(x => [x,x*2])
-// [Array(2), Array(2), Array(2), Array(2), Array(2)]
+var longestCommonPrefix = function(strs) {
+    let prefix = '';
+    if (strs.length === 1) return strs[0];
+    for (let i = 0; i < strs[0].length; i++) {
+        let currentChar = strs[0][i];
+        if (currentChar && strs.every((s) => s[i] == currentChar)) {
+            prefix += currentChar;
+        } else {
+            return prefix;
+        }
+    }
+    
+    return prefix;
+};
 
-arr.flatMap( v => [v, v* 2] )
-//  [1, 2, 2, 4, 3, 6, 4, 8, 5, 10]
+
+
 ```
 
 
-// Array ?
+### Valid Parentheses
 
-``` javascript
-var arr = [];
-arr.length = 99
-cosnole.log(arr)
-arr['name'] = 'hello'
-console.log(arr.length)  //??
+
+- https://leetcode.com/problems/valid-parentheses/
+
+```javascript
+
+var isValid = function(s) {
+    let stack = []
+    const map = new Map()
+    map.set("(", ")")
+    map.set("{", "}")
+    map.set("[", "]")
+    
+    for (element of s) {
+        if (map.has(element)) { // open
+            stack.push(element)
+        } else {                            // close
+            const lastOpen = stack.pop()
+            if (element !== map.get(lastOpen)) {
+                return false
+            }
+        }
+    }
+    
+    return stack.length ? false : true
+};
+
+```
+
+
+26. Remove Duplicates from Sorted Array
+
+- https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
+```javascript
+
+function removeDuplicates(nums, point = 0) {
+  const cursor = nums.lastIndexOf(nums[point]) + 1;
+
+  if (cursor >= nums.length) return point + 1;
+
+  if (cursor !== point) {
+    nums[++point] = nums[cursor];
+  }
+
+  return removeDuplicates(nums, point);
+}
+
+function removeDuplicates(nums) {
+  for (let i = 0; i < nums.length; i++) {
+    nums.splice(i, nums.lastIndexOf(nums[i]) - i);
+  }
+
+  return nums.length;
+}
+
+```
+
+
+
+
+rotation
+
+```javascript
+
+function solution(A, K) {
+    K = K % A.length;
+    const sliceIndex = A.length - K;
+    return [...A.slice(sliceIndex), ...A.slice(0, sliceIndex)]
+ }
+
+function solution(A, K) {
+  if (A.length === 0) return A;
+  for (let i = 0; i < K; i++) {
+    A.unshift(A.pop());
+  }
+  return A;
+}
+
+ solution([1,2,3,4],1) // [4, 1, 2, 3]
+ solution([1,2,3,4],2) // [3, 4, 1, 2]
+
+```
+
+
+```javascript
+
+
+
+
+    for (let element of A) {
+        // Apply Bitwise XOR to the current and next element
+        result ^= element
+    }
+
+ solution([1,2,3,4],1) // [4, 1, 2, 3]
+ solution([1,2,3,4],2) // [3, 4, 1, 2]
+
 ```
